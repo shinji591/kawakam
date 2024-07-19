@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>川上村について</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .main-content {
+            width: 100%;
+        }
+        .sidebar {
+            margin-left: 20px;
+            flex: 1;
+        }
+        .post-info {
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .post-title {
+            display: flex;
+            align-items: center;
+        }
+        .post-title::before {
+            content: "③";
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .rating {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+        .rating-title {
+            font-weight: bold;
+        }
+        .container {
+                display: flex;
+            }
+            .main-content {
+                flex: 3;
+            }
+            .sidebar {
+                flex: 1;
+                margin-left: 20px; /* メインコンテンツとサイドバーの間のスペース */
+            }
+            .images {
+                display: flex;
+                justify-content: space-between; /* 画像間のスペースを確保 */
+                gap: 10px; /* 画像間のスペース */
+            }
+            .images img {
+                width: calc(33.333% - 10px); /* 各画像の幅を親の1/3から10px引いたサイズに設定 */
+                height: auto; /* アスペクト比を維持 */
+            }
+    </style>
+</head>
+<body>
+    <div class="news-contents wrapper">
+        <div class="container">
+            <div class="main-content" id="tour">
+                <article>
+                    <header class="post-info">
+                        <h2 class="post-title">須走ルート | 真夏におすすめ。樹林帯の登山道</h2>
+                    </header>
+                    <img src="kawa2.jpg" alt="登山道の写真">
+                    <p>出典：PIXTA</p>
+                    <div class="rating">
+                        <p class="rating-title">体力レベル：★★★☆☆</p>
+                        <p>1泊2日</p>
+                        <p>コースタイム：9時間47分</p>
+                    </div>
+                    <p>参考：ヤマプラ</p>
+                </article>
+
+                
+                <aside class="sidebar">
+                    <h3 class="sub-title">川上村関連サイト</h3>
+                    <ul class="sub-menu">
+                    <li><a href="#">源流ツーリズム</a></li>
+                    </ul>
+                </aside>
+                
+            </div><!-- /.news-contents -->
+                   
+</body>
+</html>
+
